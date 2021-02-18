@@ -22,39 +22,50 @@ Munro Data Sheet
 ## Functions
 
 - Sort By Munro Category - MUN, TOP
-```val munRosResult : List<MunroResultModel> = MunroBuilder
+
+<pre>
+val munRosResult : List<MunroResultModel> = MunroBuilder
                    .Builder(viewModel.inputList)
                    .filterCategory(MunroTypes.MUN)
-                   .build()```
+                   .build()
+</pre>                   
+         
 
-- Sort By Munro Limit
-```val munRosResult : List<MunroResultModel> = MunroBuilder
+- Sort By Munro Limit data
+<pre>
+val munRosResult : List<MunroResultModel> = MunroBuilder
                    .Builder(viewModel.inputList)
                    .filterCategory(MunroTypes.MUN)
                    .limit(10)
-                   .build()```
+                   .build()
+</pre>
 
 - Sort By Munro minHeight, maxHeight
-```val munRosResult : List<MunroResultModel> = MunroBuilder
+<pre>
+val munRosResult : List<MunroResultModel> = MunroBuilder
                    .Builder(viewModel.inputList)
                    .filterCategory(MunroTypes.MUN)
                    .limit(10)
                    .minHeight(1000.0)
                    .maxHeight(700.0)
-                   .build()```
+                   .build()
+</pre>
 
 - Sort By Name ASC, DESC
-```val munRosResult : List<MunroResultModel> = MunroBuilder
+<pre>
+val munRosResult : List<MunroResultModel> = MunroBuilder
                    .Builder(viewModel.inputList)
                    .filterCategory(MunroTypes.MUN)
                    .limit(10)
                    .minHeight(1000.0)
                    .maxHeight(700.0)
                    .sortByName(SortPriority.ASC)
-                   .build()```
+                   .build()
+</pre>
 
 - Sort By Height ASC, DESC
-``` val munRosResult : List<MunroResultModel> = MunroBuilder
+<pre>
+ val munRosResult : List<MunroResultModel> = MunroBuilder
                    .Builder(viewModel.inputList)
                    .filterCategory(MunroTypes.MUN)
                    .limit(10)
@@ -62,6 +73,7 @@ Munro Data Sheet
                    .maxHeight(700.0)
                    .sortByName(SortPriority.ASC)
                    .sortByHeight(SortPriority.DESC)
-                   .build()```
+                   .build()
+</pre>
 
 - Added Some Proper UI and Unit Test Cases.
