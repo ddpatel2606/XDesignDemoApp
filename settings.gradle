@@ -1,0 +1,3 @@
+include ':xdesignparselib'
+include ':app'
+rootProject.name = "XDesignDemoApp"
